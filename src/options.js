@@ -15,6 +15,16 @@ function baseOption(strictMode) {
             new parser.ENSlashDateFormatStartWithYearParser(strictMode),
             new parser.ENTimeAgoFormatParser(strictMode),
             new parser.ENTimeExpressionParser(strictMode),
+            
+            // NL
+            new parser.NLISOFormatParser(strictMode),
+            new parser.NLDeadlineFormatParser(strictMode),
+            new parser.NLMonthNameLittleEndianParser(strictMode),
+            new parser.NLMonthNameMiddleEndianParser(strictMode),
+            new parser.NLSlashDateFormatParser(strictMode),
+            new parser.NLSlashDateFormatStartWithYearParser(strictMode),
+            new parser.NLTimeAgoFormatParser(strictMode),
+            new parser.NLTimeExpressionParser(strictMode),           
 
             // JP
             new parser.JPStandardParser(strictMode),
@@ -35,6 +45,7 @@ function baseOption(strictMode) {
             new refiner.ENMergeDateTimeRefiner(),
             new refiner.ENMergeDateRangeRefiner(),
             new refiner.JPMergeDateRangeRefiner(),
+            new refiner.NLMergeDateRangeRefiner(),
 
             // Extract additional info later
             new refiner.ExtractTimezoneOffsetRefiner(),
@@ -58,6 +69,10 @@ exports.casualOption = function () {
     // EN
     options.parsers.unshift(new parser.ENCasualDateParser());
     options.parsers.unshift(new parser.ENWeekdayParser());
+
+    // NL
+    options.parsers.unshift(new parser.NLCasualDateParser());
+    options.parsers.unshift(new parser.NLWeekdayParser());
 
     // JP
     options.parsers.unshift(new parser.JPCasualDateParser());

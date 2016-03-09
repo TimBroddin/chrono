@@ -72,3 +72,14 @@ exports.ESTimeExpressionParser = require('./ES/ESTimeExpressionParser').Parser;
 exports.ESWeekdayParser = require('./ES/ESWeekdayParser').Parser;
 exports.ESMonthNameLittleEndianParser = require('./ES/ESMonthNameLittleEndianParser').Parser;
 exports.ESSlashDateFormatParser = require('./ES/ESSlashDateFormatParser').Parser;
+
+exports.NLISOFormatParser = require('./NL/NLISOFormatParser').Parser;
+exports.NLDeadlineFormatParser = require('./NL/NLDeadlineFormatParser').Parser;
+exports.NLMonthNameLittleEndianParser = require('./NL/NLMonthNameLittleEndianParser').Parser;
+exports.NLMonthNameMiddleEndianParser = require('./NL/NLMonthNameMiddleEndianParser').Parser;
+exports.NLSlashDateFormatParser = require('./NL/NLSlashDateFormatParser').Parser;
+exports.NLSlashDateFormatStartWithYearParser = require('./NL/NLSlashDateFormatStartWithYearParser').Parser;
+exports.NLTimeAgoFormatParser = require('./NL/NLTimeAgoFormatParser').Parser;
+exports.NLTimeExpressionParser = require('./NL/NLTimeExpressionParser').Parser;
+exports.NLWeekdayParser = require('./NL/NLWeekdayParser').Parser;
+exports.NLCasualDateParser = require('./NL/NLCasualDateParser').Parser;
